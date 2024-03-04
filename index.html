@@ -6,33 +6,32 @@
     <title>Tic Tac Toe Game</title>
     <link rel="stylesheet" href="style.css"> <!-- If you have CSS styles -->
 </head>
-<!-- We’re making a Tic Tac Toe game you can play in your browser -->
+<!-- We’re making an array based Tic Tac Toe game you can play in your browser -->
 <!-- Clean up the interface to allow players to put in their names, include a button to start/restart the game and add a display element that shows the results upon game end -->
 <!-- The game should be able to detect a win or a draw and display the results -->
+
 <body>
-    <div class="container">
-        <h1>Tic Tac Toe Game</h1>
-        <div class="game">
-            <div class="row">
-                <div class="cell" id="cell-0"></div>
-                <div class="cell" id="cell-1"></div>
-                <div class="cell" id="cell-2"></div>
-            </div>
-            <div class="row">
-                <div class="cell" id="cell-3"></div>
-                <div class="cell" id="cell-4"></div>
-                <div class="cell" id="cell-5"></div>
-            </div>
-            <div class="row">
-                <div class="cell" id="cell-6"></div>
-                <div class="cell" id="cell-7"></div>
-                <div class="cell" id="cell-8"></div>
-            </div>
-        </div>
-        <div class="result">
-            <h2 id="result">Result</h2>
-            <button id="reset">Reset</button>
-        </div>
+    <h1>Tic Tac Toe Game</h1>
+    <div class="game">
+        <div class="cell" id="0"></div>
+        <div class="cell" id="1"></div>
+        <div class="cell" id="2"></div>
+        <div class="cell" id="3"></div>
+        <div class="cell" id="4"></div>
+        <div class="cell" id="5"></div>
+        <div class="cell" id="6"></div>
+        <div class="cell" id="7"></div>
+        <div class="cell" id="8"></div>
+    </div>
+    <div class="result">
+        <h2 id="result"></h2>
+    </div>
+    <div class="players">
+        <input type="text" id="player1" placeholder="Player 1">
+        <input type="text" id="player2" placeholder="Player 2">
+        <button id="start">Start Game</button>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
