@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe Game</title>
-    <link rel="stylesheet" href="style.css"> <!-- If you have CSS styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="gameContainer">
         <input type="text" id="player1Name" placeholder="Player 1 Name">
         <input type="text" id="player2Name" placeholder="Player 2 Name">
-        <button id="startGame">Start/Restart Game</button>
-        <div id="gameStatus"></div>
-        <div id="gameBoard" class="game-board">
-            <!-- Gameboard will be rendered here by JS -->
-        </div>
-        <div id="gameResult"></div>
+        <button id="startGame">Start Game</button>
+        <div id="gameBoard"></div>
+        <div id="statusDisplay"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="gameboard.js"></script>
+    <script src="player.js"></script>
+    <script src="game.js"></script>
+    <script src="displayController.js"></script>
 </body>
 </html>
-
